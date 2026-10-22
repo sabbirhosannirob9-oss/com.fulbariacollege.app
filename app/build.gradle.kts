@@ -16,10 +16,11 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             isMinifyEnabled = false
         }
-        debug {
+
+        release {
             isMinifyEnabled = false
         }
     }
@@ -32,10 +33,6 @@ android {
     buildFeatures {
         compose = true
     }
-}
-
-kotlin {
-    jvmToolchain(17)
 }
 
 dependencies {
